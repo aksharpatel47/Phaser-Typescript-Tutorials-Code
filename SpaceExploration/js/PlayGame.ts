@@ -131,7 +131,7 @@ module SpaceHipster{
         }
 
         gameOver(){
-            this.game.state.start('MainMenu', true, false, this.playerScore);
+            this.game.state.start('MainMenu', true, false);
         }
     }
 }
