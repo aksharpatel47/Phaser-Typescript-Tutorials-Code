@@ -16,13 +16,14 @@ module TopDownGame{
         create(){
             this.game.stage.backgroundColor = "#fff";
 
-            this.game.scale.scaleMode = Phaser.ScaleManager.RESIZE;
+            this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
             this.game.scale.pageAlignHorizontally = true;
             this.game.scale.pageAlignVertically = true;
             this.game.scale.refresh();
             this.game.physics.startSystem(Phaser.Physics.ARCADE);
 
-            this.game.state.start('Preload');
+            this.game.state.start('Preload', true, false);
+
         }
     }
 }

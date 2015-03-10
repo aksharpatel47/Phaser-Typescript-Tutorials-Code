@@ -20,5 +20,6 @@ module TopDownGame{
 }
 
 window.onload = () => {
-    new TopDownGame.Game(window.innerWidth, window.innerHeight);
+    new TopDownGame.Game(160, 160);
+    console.log('The game is on');
 };
