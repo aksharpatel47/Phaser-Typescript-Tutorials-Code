@@ -1,5 +1,6 @@
 bower_components
 assets
+source
 .idea
 *.js
 *.js.map
